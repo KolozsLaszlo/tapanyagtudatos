@@ -3,7 +3,7 @@ import "../App.css";
 
 function Footer() {
   return (
-    <section>
+    <section className="">
       <div className="bg-black relative mb-0 text-white">
         <div className="py-10 w-full px-4">
           <div className="grid gap-10 md:grid-cols-3 pb-10">

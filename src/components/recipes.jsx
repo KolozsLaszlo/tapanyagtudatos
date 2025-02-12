@@ -57,7 +57,7 @@ const Recipes = () => {
   }
 
   return (
-    <div className="p-6">
+    <div className="p-6  min-h-screen">
       {/* Kereső mező */}
       <div className="mb-4">
         <input type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Keress egy receptet..." className="p-2 border border-gray-300 rounded-md w-full text-white" />
