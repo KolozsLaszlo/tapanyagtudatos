@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Home from "./components/home";
 import Recipes from "./components/recipes";
 import Calculator from "./components/calculator";
+import Login from "./components/login";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/receptek" element={<Recipes />} />
             <Route path="/kalkulator" element={<Calculator />} />
+            <Route path="/bejelentkezes" element={<Login />} />
           </Routes>
         </main>
         <Footer />

@@ -40,10 +40,18 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/Calculator"
+                to="/kalkulator"
                 className="hover:text-emerald-500 ease-in duration-300"
               >
                 Kalkulátor
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/bejelentkezes"
+                className="bg-white text-green-800 px-4 py-2 rounded-lg hover:bg-gray-200"
+              >
+                Bejelentkezés
               </Link>
             </li>
           </ul>
@@ -57,6 +65,7 @@ function Navbar() {
             <i className={`fa-solid ${menuOpen ? "fa-xmark" : "fa-bars"}`}></i>
           </div>
 
+          {/* Mobil menü */}
           <div
             id="menu"
             className={`${
@@ -84,11 +93,20 @@ function Navbar() {
               </li>
               <li className="py-10">
                 <Link
-                  to="/Calculator"
+                  to="/kalkulator"
                   className="hover:text-emerald-500 ease-in duration-300"
                   onClick={handleMenuToggle}
                 >
                   Kalkulátor
+                </Link>
+              </li>
+              <li className="py-10">
+                <Link
+                  to="/bejelentkezes"
+                  className="hover:text-emerald-500 ease-in duration-300"
+                  onClick={handleMenuToggle}
+                >
+                  Bejelentkezés
                 </Link>
               </li>
             </ul>
